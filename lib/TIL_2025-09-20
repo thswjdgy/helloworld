@@ -1,0 +1,54 @@
+// 타입 추론 사용
+var author = '개발하는남자'; // Dart가 자동으로 String으로 추론
+
+// 명시적 타입 선언
+String authorExplicit = '개발하는남자';
+
+// null이 될 수 없는 변수
+String name = '개발하는남자'; // 반드시 값이 있어야 함
+
+// null이 될 수 있는 변수
+String? bookName; // 초기값 없이 선언 가능, 나중에 null 또는 값 할당 가능
+
+void main() {
+  // 정수형
+  int age = 37;
+
+  // 실수형
+  double height = 175.5;
+
+  // 형변환
+  int a = height.toInt();      // 실수를 정수로 변환
+  double b = age.toDouble();   // 정수를 실수로 변환
+
+  print('나이: $age, 키: $height');
+  print('형변환 결과 - a: $a, b: $b');
+}
+
+void main() {
+  // 기본 문자열 선언
+  var greeting = 'Hello';
+  var name = "world";
+
+  // 여러 줄 문자열 (triple quotes 사용)
+  var multiLine = '''
+여러 줄
+문자열입니다.
+Dart는 이렇게도 문자열을 처리할 수 있어요!
+''';
+
+  print('$greeting, $name!');
+  print(multiLine);
+}
+
+void main() {
+  // 가변 리스트 선언
+  var numbers = [1, 2, 3];
+
+  // 요소 추가
+  numbers.add(4);
+
+  print(numbers); // 출력: [1, 2, 3, 4]
+}
+
+
